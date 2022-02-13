@@ -1,8 +1,9 @@
 /*
  * Author: Klusjesman, modified bij supersjimmie for Arduino/ESP8266
  */
- 
-#pragma once
+
+#ifndef __CC1101_H__
+#define __CC1101_H__
 
 #include <stdio.h>
 #include "CC1101Packet.h"
@@ -185,7 +186,7 @@ class CC1101
 		void readBurstRegister(uint8_t* buffer, uint8_t address, uint8_t length);
 		
 		void sendData(CC1101Packet *packet);
-    size_t readData(CC1101Packet* packet, size_t len);
+		uint8_t receiveData(CC1101Packet* packet, uint8_t length);
 	
 	private:
 		CC1101( const CC1101 &c );
@@ -202,3 +203,5 @@ class CC1101
 		void reset();
 		
 }; //CC1101
+
+#endif //__CC1101_H__
