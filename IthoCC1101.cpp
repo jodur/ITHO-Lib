@@ -45,9 +45,9 @@ IthoCC1101::IthoCC1101(uint8_t counter, uint8_t sendTries) : CC1101()
   this->outIthoPacket.counter = counter;
   this->sendTries = sendTries;
 
-  this->outIthoPacket.deviceId[0] = 33;
-  this->outIthoPacket.deviceId[1] = 66;
-  this->outIthoPacket.deviceId[2] = 99;
+  this->outIthoPacket.deviceId[0] = 10;
+  this->outIthoPacket.deviceId[1] = 87;
+  this->outIthoPacket.deviceId[2] = 81;
 
   this->outIthoPacket.deviceType = 22;
 
