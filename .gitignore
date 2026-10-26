@@ -1,0 +1,25 @@
+# Build artifacts
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dll
+*.dylib
+*.exe
+*.out
+*.elf
+*.hex
+*.bin
+*.d
+# Build directories
+build/
+Debug/
+Release/
+.pio/
+# IDE / OS
+.vscode/
+.vs/
+*.user
+.DS_Store
+Thumbs.db
